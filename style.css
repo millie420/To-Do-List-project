@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -127,4 +128,137 @@ body {
     font-size: 1.2rem;
     cursor: pointer;
     padding: 5px;
+=======
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+.body.dark {
+    background: #121212;
+}
+
+.body.dark .todo-app {
+    background: rgba(0,0,0,0.6);
+}
+
+#date, #progress {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+body {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('images/image 3.jpg') no-repeat center center fixed;
+    background-size: cover;
+
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.todo-app{
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 100px rgba(39, 36, 36, 0.819);
+    border: 3px solid oklch(23.472% 0.10471 279.904 / 0.18);
+    backdrop-filter: blur(10px);
+}
+
+.todo-app h1{
+    font-size: 2rem;
+
+}
+
+.input-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+.input-area input {
+    flex: 1;
+    padding: 10px 17px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 22px;
+    outline: none;
+    background: rgba(117, 56, 72, 0.3);
+    color: #bdbdbd;
+
+}
+.input-area input::placeholder {
+    color: #bdbdbd;
+}
+
+.input-area button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    padding: 8px;
+    font-size: 1.1rem;
+    border-radius: 50%;
+    outline: none;
+    background: rgba(255, 194, 72, 0.3);
+    color: #fff;
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.18);
+}
+
+.input-area button:hover {
+    background: #ff6f91;
+    transform: scale(1.1);
+}
+
+.todos-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.task-list {
+    width: 100%;
+}
+
+.task {
+    background: purple;
+    padding: 10px;
+    margin: 5px 0;
+    border-left: 5px solid green;
+}
+
+.task.completed {
+    background: #c8e6c9;
+    text-decoration: line-through;
+}
+
+.delete-btn {
+    background: red;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 5px;
+>>>>>>> 0ac544c959711f12e4fda8519b41182b35f1cc44
 }
