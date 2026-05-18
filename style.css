@@ -128,24 +128,29 @@ body {
 
 
 .task span {
-    flex: 1;
     font-size: 14px;
+    color: #fff;
 
 }
 
 .task small {
-    color: #000000;
     font-size: 12px;
-    font-weight: bold;
+    font-weight: 700;
+    color: #000 !important;
     opacity: 1;
     margin-left: 0;
     display: block;
 }
 .task.completed {
     text-decoration: line-through;
-    opacity: 0.6;
     background: #c8e6c9;
-    text-decoration: line-through;
+    color: #000;
+}
+
+.task.completed small {
+    color: #000;
+    font-weight: 800;
+    opacity: 1;
 }
 
 .task.completed::before {
@@ -160,7 +165,7 @@ body {
     background: none;
     border: none;
     color: white;
-    font-size: 0.6rem;
+    font-size: 0.9rem;
     cursor: pointer;
     font-weight: bold;
     align-self: flex-end;
@@ -171,13 +176,13 @@ body {
 }
 
 @media (max-width: 600px) {
+
     .todo-app {
         padding: 1rem;
     }
 
     .input-area input {
         font-size: 1rem;
-        flex: 1;
         width: 220px;
     }
 
@@ -186,7 +191,8 @@ body {
     }
 
     .task small {
-        font-size: 14px;
-        color: #ffffff
+        font-size: 13px;
+        color: #000;
+        font-weight: 800;
     }
 }
