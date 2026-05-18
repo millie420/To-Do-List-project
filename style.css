@@ -129,9 +129,11 @@ body {
 }
 
 .task small {
-    margin-left: 10px;
     color: #ddd;
     font-size: 12px;
+    font-weight: bold;
+    margin-left: 0;
+    display: block;
 }
 .task.completed {
     text-decoration: line-through;
@@ -152,7 +154,7 @@ body {
     background: none;
     border: none;
     color: white;
-    font-size: 0.6rem;
+    font-size: 1rem;
     cursor: pointer;
     font-weight: bold;
     align-self: flex-end;

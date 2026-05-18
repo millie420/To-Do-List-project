@@ -25,12 +25,11 @@ document.addEventListener("DOMContentLoaded", function (){
         // date (if user selected)
         var small = document.createElement("small");
         if (date.value !== "") {
-            var d = new Date(date.value);
-            small.innerHTML = "📅 " + d.toDateString();
+            small.innerHTML = "DATE: " + date.value;
             
         }
         else {
-            small.innerHTML = "";
+            small.innerHTML = "📅 " + date.value;
         }
 
         // delete button
