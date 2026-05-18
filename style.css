@@ -15,7 +15,7 @@ body.dark .todo-app {
 
 #date, #progress {
     font-size: 0.9rem;
-    opacity: 0.85rem;
+    opacity: 0.85;
     color: #e0e0e0;
 } 
 
@@ -121,6 +121,8 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: 5px;
+    width: 100%;
+    word-wrap: break-word;
     
 }
 
@@ -130,7 +132,7 @@ body {
 }
 
 .task small {
-    color: #fff;
+    color: #333;
     font-size: 16px;
     font-weight: bold;
     margin-left: 0;
@@ -163,4 +165,22 @@ body {
 
 .delete-btn:hover {
     color: red;
+}
+
+@media (max-width: 500px) {
+    .todo-app {
+        padding: 1rem;
+    }
+
+    .input-area input {
+        font-size: 1rem;
+    }
+
+    .task {
+        font-size: 0.95rem;
+    }
+
+    .task small {
+        font-size: 14px;
+    }
 }
