@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function (){
         // date (if user selected)
         var small = document.createElement("small");
         if (date.value !== "") {
-            small.innerHTML = " (" + date.value + ")";
+            small.innerHTML = date.value ? "📅 " + date.value : "";
         }
 
         // delete button
@@ -42,11 +42,13 @@ document.addEventListener("DOMContentLoaded", function (){
 
         input.value = "";
 
-        // delete task
+        // mark as completed instead of deleting
+
         btn.onclick = function () {
-            list.removeChild(li);
+            li.classList.toggle("completed");
             update();
         };
+
 
         // mark complete
         span.onclick = function () {

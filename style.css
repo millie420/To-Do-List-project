@@ -114,19 +114,47 @@ body {
     background: purple;
     padding: 10px;
     margin: 5px 0;
-    border-left: 5px solid green;
+    border-left: 5px solid #00ff88;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
 }
 
+
+.task span {
+    flex: 1;
+}
+
+.task small {
+    margin-left: 10px;
+    color: #ddd;
+    font-size: 12px;
+}
 .task.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
     background: #c8e6c9;
     text-decoration: line-through;
 }
 
+.task.completed::before {
+    content: "✔";
+    margin-right: 10px;
+    color: #00ff88;
+    font-weight: bold;
+}
+
+
 .delete-btn {
-    background: red;
+    background: none;
     border: none;
     color: white;
-    font-size: 1.2rem;
+    font-size: 0.6rem;
     cursor: pointer;
-    padding: 5px;
+    font-weight: bold;
+}
+
+.delete-btn:hover {
+    color: red;
 }
