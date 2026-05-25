@@ -25,7 +25,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('images/image3bg.jpg');
+    background: url(images/image3bg.jpg);
     background-size: cover;
 }
 
@@ -66,6 +66,16 @@ body {
 
 }
 
+#date {
+    color: #000;
+    background: #fff;
+    border-radius: 10px;
+    padding: 6px;
+    font-weight: 500;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
 .input-area input {
     flex: 1;
     padding: 10px 17px;
@@ -74,7 +84,7 @@ body {
     border-radius: 22px;
     outline: none;
     background: rgba(117, 56, 72, 0.3);
-    color: #bdbdbd;
+    color: #000;
 
 }
 .input-area input::placeholder {
