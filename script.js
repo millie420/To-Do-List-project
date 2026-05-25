@@ -24,12 +24,12 @@ document.addEventListener("DOMContentLoaded", function (){
 
         // date (if user selected)
         var small = document.createElement("small");
-        
+
         if (date.value !== "") {
             small.innerHTML = "📅 " + date.value;
             
         } else {
-            small.innerHTML = "no date selected";
+            small.innerHTML = "📅 No date selected";
         }
 
         // delete button
