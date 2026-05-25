@@ -67,13 +67,14 @@ body {
 }
 
 #date {
+    width: 100%;
     color: #000;
     background: #fff;
     border-radius: 10px;
-    padding: 6px;
+    padding: 10px 15px;
     font-weight: 500;
-    appearance: none;
-    -webkit-appearance: none;
+    border: 1px solid #ccc;
+    outline: none
 }
 
 .input-area input {
