@@ -68,12 +68,16 @@ body {
 
 #date {
     width: 100%;
-    padding: 10px 15px;
+    padding: 10px ;
     font-size: 1rem;
     border-radius: 12px;
     border: 1px solid #ccc;
     background: #fff;
     color: #000;
+}
+
+#date:invalid {
+    color: #666;
 }
 
 .input-area input {
@@ -205,4 +209,12 @@ body {
         color: #000;
         font-weight: 800;
     }
+
+    @media (max-width: 600px) {
+    #date {
+        width: 120px;
+        font-size: 0.85rem;
+        padding: 6px 8px;
+    }
+}
 }
